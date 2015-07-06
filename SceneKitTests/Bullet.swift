@@ -48,8 +48,8 @@ class Bullet: SCNNode {
 
     func addGlow() {
         let filter = CIFilter(name: "CIGaussianBlur")!
-//        filter.setValue(120, forKey: kCIInputRadiusKey)
-        filter.setDefaults()
+        filter.setValue(120, forKey: kCIInputRadiusKey)
+        //filter.setDefaults()
         self.filters = [filter]
     }
 
